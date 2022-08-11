@@ -2,7 +2,7 @@
 //body mass (kg) divided by the square of the body height (m) square
 
 const calculate = (height:number, weight:number):string | number => {
-    let response:string;
+    let response = "pass the correct data: first your height, second your weight";
     const heightInMeters = height / 100;
     const bmi:number = weight / (Math.pow(heightInMeters, 2));
     if(bmi <= 18.5){
